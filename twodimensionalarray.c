@@ -1,13 +1,22 @@
 #include <stdio.h>
-int main()
+void main()
 {
-    int arr[3][2] = {{50, 60}, {70, 80}, {90, 100}};
-    printf("The Array elements are:\n");
-    for (int i = 0; i < 3; i++)
+    int a[3][3];
+    int i, j;
+    for (i = 0; i < 3; i++)
     {
-        for (int j = 0; j < 2; j++)
+        for (j = 0; j < 3; j++)
         {
-            printf("%d ", arr[i][j]);
+            printf("Enter the element : a[%d][%d]", i, j);
+            scanf("%d", &a[i][j]);
+        }
+    }
+    printf("To print the array values\n");
+    for (i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            printf("%d\t", a[i][j]);
         }
         printf("\n");
     }
